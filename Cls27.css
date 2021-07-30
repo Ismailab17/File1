@@ -1,0 +1,533 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.clear::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.fixwidth{
+    max-width: 1200px;
+    margin: auto;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.tcenter{
+    text-align: center;
+}
+.tleft{
+    text-align: left;
+}
+.tright{
+    text-align: right;
+}
+img{
+    max-width: 100%;
+}
+a,h1,h2,h3,h4,h5,h6,span,p{
+    color: #010101;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Header CSS */
+.headerSection{
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+.logo{
+    width: 35%;
+}
+.applogo{
+    width: 60px;
+    float: left;
+    margin-right: 10px;
+}
+.logotext{
+    display: block;
+    margin-top: 18px;
+    font-size: 26px;
+}
+.menu{
+    width: 50%;
+}
+.primarymenu{}
+.primarymenu li{
+    display: inline-block;
+}
+.primarymenu li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 20px;
+    font-size: 18px;
+    font-weight: 95%;
+}
+.primarymenu li a:hover{}
+.button{
+    width: 15%;
+    text-align: center;
+}
+.headerbtn{
+    display: block;
+    border: 2px solid #ddd;
+    padding: 5px 0;
+    margin-top: 13px;
+    color: #6278df;
+    border-color: #6278df;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 1s;
+}
+.headerbtn:hover{
+    background: #6278df;
+    color: white;
+}
+.primarymenu li{
+    position: relative;
+}
+.primarymenu li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    background: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+.primarymenu li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+}
+.primarymenu li ul li a:hover{
+    color:#6278df;
+}
+.primarymenu li ul li{
+    border-bottom: 1px solid #e6e6e6;
+    display: block;
+    margin-top: -10px;
+    margin-bottom: -15px;
+}
+
+/* Banner CSS */
+.banner{
+    text-align: center;
+    background-image: url(./img/Banner.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 180px;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 9;
+    margin-top: 60px;
+}
+.bannertext{
+}
+.bannertext p {
+    color: white;
+    font-size: 24px;
+    line-height: 0px;
+}
+.bannertext h2 {
+        color: white;
+        font-size: 60px;
+        margin: 40px 0;
+}
+.bannertext a{
+    text-decoration: none;
+    border: 1px solid #ddd;
+    background-color: #fcfcfc;
+    border-color: #fcfcfc;
+    color: #7d7d7d;
+    padding: 10px 30px;
+    font-size: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: .7s;
+}
+.bannertext a:hover{
+    color: white;
+    background: #6278df;
+}
+
+.banner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(34, 32, 32, .4);
+    z-index: -1;
+}
+.bannerbottom{
+    box-sizing: border-box;
+    background:  #f7f9ff;
+    padding: 30px 0;
+}
+.vdo{
+    width: 50%;
+}
+.vdocontent{
+    width: 47%;
+}
+.vdocontent h2 {
+    font-size: 46px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.vdocontent p {
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1.6;
+}
+.service{
+    background: #ffffff;
+    padding: 120px 0;
+}
+.servicehead{}
+.servicehead h2 {
+    font-size: 53px;
+    margin-bottom: 20px;
+}
+.servicehead p {
+    font-weight: 300;
+    color: #767676;
+    font-size: 24px;
+}
+
+.mainservice{
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.serviceitem {
+    width: 31%;
+    box-sizing: border-box;
+    padding: 70px 20px;
+    padding-top: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    box-shadow:  2.5px 4.33px 30px 0 rgba(64,87,191,0.1);
+}
+.sicon {
+    color: #6278df;
+    width: 60px;
+    min-height: 111px;
+    float: left;
+    font-size: 55px;
+    margin-right: 10px;
+    
+}
+.serviceitem h2{
+    font-weight: 500;
+    color: black;
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+}
+.serviceitem p{
+    font-weight: 300;
+    color: #767676;
+    font-size: 1.3rem;
+}
+
+.pricingtable{
+    background: #f7f9ff;
+   padding: 60px;
+}
+.phead h2 {
+    font-size: 55px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.phead p{
+    font-weight: 300;
+    font-size: 26px;
+    color: #767676;
+}
+
+.mainpricebox{
+    margin-top: 30px;
+}
+.pricebox{
+    width: 30.8%;
+    margin: 15px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.5);
+    box-sizing: border-box;
+    background-color: white;
+}
+.upperpricebox{
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+}
+.upperpricebox h3 {
+    font-size: 24px;
+    font-weight: 500;
+}
+span{
+    font-size: 24px;
+}
+.upperpricebox h1 {
+    font-size: 50px;
+    margin: 30px 0;
+}
+.upperpricebox h4{
+    font-size: 24px;
+    font-weight: 500;
+}
+.upperpricebox p {
+    font-size: 21px;
+    margin: 20px 0;
+    font-weight: 300;
+}
+.lowerpricebox{
+    padding: 20px;
+}
+.lowerpricebox ul{
+    list-style: none;
+}
+.lowerpricebox ul li{
+    font-size: 22px;
+    font-weight: 200;
+    color:#767676;
+    margin: 25px 0;
+}
+.lowerpricebox ul li span{
+    color:  #6278df;
+    font-size: 25px;
+}
+.pbtn {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.pbtn a {
+    text-align: center;
+    border: 1px solid #ddd;
+    color: #6278df;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.3);
+    text-decoration: none;
+    padding: 13px 23px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 22px;
+    transition: .7s;
+}
+.pricebox:hover .upperpricebox{
+    color: white;
+    background: #6278df;
+    transition: .7s;
+}
+.pricebox:hover .pbtn a{
+   color: white;
+    background: #6278df;
+}
+
+.team{
+    padding: 60px 0;
+}
+.teamcontent h1 {
+    font-size: 44px;
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 77px;
+}
+.teammates{
+    width: 23%;
+    background: #fff;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.3);
+    margin-right: 2%;
+}
+.face1{
+    width: 100%;
+    border-radius:5px 5px  0 0 ;
+    margin-bottom: 30px;
+}
+.name{
+    font-weight: 500;
+    margin-left: 8px;
+}
+.post{
+    font-weight: 300;
+    padding: 20px 0;
+    font-size: 20px;
+    margin-left: 8px;
+}
+
+.newslater{
+    background: #f7f9ff;
+    padding: 60px 0;
+}
+.newstext p{
+    font-weight: 300;
+    font-size: 26px;
+    color: #767676;
+}
+.newstext h1{
+    font-size: 55px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.email {
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+.subbtn p{
+    text-decoration: none;
+    border: 1px solid #ddd;
+    padding: 9px 62px;
+    border-radius: 5px;
+    background: #6278df;
+    color: white;
+    transition: 1s;
+    font-size: 17px;
+    display: inline-block;
+}
+.subbtn p:hover{
+    background: white;
+    color: #6278df;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.3);
+    cursor: pointer;
+}
+
+.blogsection{}
+.blog1{
+    padding: 80px 0;
+}
+.bloghead{
+    width: 50%;
+}
+.bloghead h1{
+    font-size: 42px;
+    font-weight: 500;
+}
+.blogcontent{
+    width: 50%;
+}
+.blogcontent p{
+    color:#767676;
+    font-size: 22px;
+    font-weight: 400;
+}
+.mainblog{
+    padding-bottom: 30px;
+}
+.blog2{}
+.mainbloghead{
+    width: 48%;
+    margin-right: 2%;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.3);
+}
+.mainbloghead img{
+    width: 48%;
+    float: left;
+    margin-right: 10px;
+}
+.mainbloghead h3{
+    font-size: 24px;
+    font-weight: 500;
+    margin: 30px 0;
+}
+.mainbloghead p{
+    font-size: 20px;
+    font-weight: 300;
+    color: #767676;;
+}
+
+
+.textimonial-section{
+    background: #f7f9ff;
+    padding: 40px 0;
+}
+.tcontent{
+    padding: 70px 0;
+}
+.tcontent p{
+    color:#767676;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 20px 0;
+}
+.tcontent h1{
+    font-size: 42px;
+    font-weight: 500;
+}
+.titemsection{
+    width: 33%;
+}
+.titem {
+    position: relative;
+}
+.titem p{
+    color: #767676;
+    font-size: 18px;
+    line-height: 1.4rem;
+    border: 1px solid #ddd;
+    padding: 40px;
+    box-shadow:2.5px 4.33px 30px 0 rgba(64,87,191,.3);
+    margin-right: 2%;
+    margin-bottom: 30px;
+}
+.titem::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: -212px;;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: #ffffff transparent transparent transparent;
+}
+.timg{
+    margin-left: 50px;
+}
+.timg img{
+    border-radius: 50%;
+    width: 80px;
+    float: left;
+    margin-right: 15px;
+}
+.timg h3{
+    font-size: 22px;
+    font-weight: 500;
+    position: relative;
+    top: 15px;
+}
+.timg span{
+    font-size: 16px;
+    color: #767676;
+    position: relative;
+    top: 15px;
+}
+.titem p:before{
+    content: "\f10d " ;
+    position: absolute;
+    font-family:  FontAwesome;
+    opacity: 0.2;
+    font-size: 50px;
+    top: 25px;
+    left: 25px;
+}
+
+
+
+
+
